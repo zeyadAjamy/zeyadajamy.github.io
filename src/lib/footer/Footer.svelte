@@ -1,13 +1,13 @@
 <script lang="ts">
     import { page } from '$app/stores';
     // imgs
-    import right_arrow from '$lib/assets/fontAwesome/right-arrow.svg';
-    import facebook from '$lib/assets/fontAwesome/facebook.svg';
-    import instagram from '$lib/assets/fontAwesome/instagram.svg';
-    import twitter from '$lib/assets/fontAwesome/twitter.svg';
-    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
-    import envelope from '$lib/assets/fontAwesome/envelope.svg';
-    import phone from '$lib/assets/fontAwesome/phone.svg';
+    import right_arrow from '../../../static/fontAwesome/right-arrow.svg';
+    import facebook from '../../../static/fontAwesome/facebook.svg';
+    import instagram from '../../../static/fontAwesome/instagram.svg';
+    import twitter from '../../../static/fontAwesome/twitter.svg';
+    import linkedin from '../../../static/fontAwesome/linkedin.svg';
+    import envelope from '../../../static/fontAwesome/envelope.svg';
+    import phone from '../../../static/fontAwesome/phone.svg';
     // API fetching    
     import { onMount } from 'svelte';
     import {base} from '$app/paths';
@@ -106,7 +106,7 @@
 </footer>
 
 <style lang="scss">
-    @import "../assets/style_src/styleVars.scss";
+    @import "../../../static/style_src/styleVars.scss";
 
     footer{
         width: 100vw;

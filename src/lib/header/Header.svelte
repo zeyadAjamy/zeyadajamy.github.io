@@ -2,6 +2,7 @@
     import { page } from '$app/stores';
     import menuIcon from './bars.svg';
     import { base } from '$app/paths';
+    import src from './logo.png';
     let nav : HTMLElement;
     const navbar = () =>{
         let height = nav.style.height;
@@ -11,12 +12,10 @@
         }
         nav.style.height = '95px';
     }
-    import logo from './logo.png';
-    let toRoutes: string =  '../../routes/';
 </script>
 
 <header bind:this={nav}>
-    <img src={logo} title="Zeyad Alagamy" alt="Zeyad Alagamy" class="logo">
+    <img {src} title="Zeyad Alagamy" alt="Zeyad Alagamy" class="logo">
     <ul class="nav">
         <li class:active={$page.url.pathname === '/'}>
             <a sveltekit:prefetch href="{ base }/" content="Home"> Home </a>
@@ -62,7 +61,7 @@
 </header>
 
 <style type="text/scss">
-    @import "../assets/style_src/styleVars.scss";
+    @import "../../../static/style_src/styleVars.scss";
 
     header {
         position: sticky;

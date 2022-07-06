@@ -10,7 +10,7 @@
 	export const router = browser;
 
 	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
+	// it so that it gets served as a .static./../ asset in prod
 	export const prerender = true;
 </script>
 
@@ -84,8 +84,8 @@
     });
 
     // import media 
-    import info from '$lib/assets/fontAwesome/info.svg';
-    import fav from '../favicon.png';
+    import info from '../../static/fontAwesome/info.svg';
+    import fav from '../../static/favicon.png';
 
 </script>
 
@@ -155,7 +155,7 @@
 </section>
 
 <style lang="scss">
-    @import  '../lib/assets/style_src/styleVars.scss';
+    @import  '../../static/style_src/styleVars.scss';
 
     .tooltip {
         display: flex;

@@ -47,7 +47,7 @@
 
     typeWriter(txt);
 
-    import fav from '../favicon.png';
+    import fav from '../../static/favicon.png';
 </script>
 
 <svelte:head>
@@ -83,7 +83,7 @@
     </div>
 </section>
 <style lang="scss">
-    @import  '../lib/assets/style_src/styleVars.scss';
+    @import  '../../static/style_src/styleVars.scss';
 
     .home{
         width: 100vw;

@@ -15,7 +15,9 @@ const config = {
             base: dev ? '' : '/zeyadajamy.github.io',
         },
 		files: {
-			assets: 'src/lib/assets',
+			lib: 'src/lib',
+			assets: 'static/*',
+			routes: 'src/routes'
 		},
 		// Override http methods in the Todo forms
 		methodOverride: {

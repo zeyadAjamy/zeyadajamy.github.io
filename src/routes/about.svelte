@@ -17,11 +17,11 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     // imgs
-    import facebook from '$lib/assets/fontAwesome/facebook.svg';
-    import instagram from '$lib/assets/fontAwesome/instagram.svg';
-    import twitter from '$lib/assets/fontAwesome/twitter.svg';
-    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
-    import download from '$lib/assets/fontAwesome/download.svg';
+    import facebook from '../../static/fontAwesome/facebook.svg';
+    import instagram from '../../static/fontAwesome/instagram.svg';
+    import twitter from '../../static/fontAwesome/twitter.svg';
+    import linkedin from '../../static/fontAwesome/linkedin.svg';
+    import download from '../../static/fontAwesome/download.svg';
     onMount(() => {
         async function extractJSON<T>(url: string) : Promise<T> { // Fetch data from JSON file
         return fetch(url)
@@ -52,7 +52,7 @@
         }).catch( err => console.log("Error: " + err));
     });
     import fav from '../favicon.png';
-    import imgSrc from '$lib/assets/imgs/zeyad_alagamy.png'
+    import imgSrc from '../../static/imgs/zeyad_alagamy.png'
     import {base} from '$app/paths';
 </script>
 
@@ -93,7 +93,7 @@
 </section>
 
 <style lang="scss">
-    @import  '../lib/assets/style_src/styleVars.scss';
+    @import  '../../static/style_src/styleVars.scss';
 
     .about{
         display: flex;
