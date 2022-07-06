@@ -16,7 +16,6 @@ const config = {
         },
 		files: {
 			lib: 'src/lib',
-			assets: 'static/*',
 			routes: 'src/routes'
 		},
 		// Override http methods in the Todo forms
