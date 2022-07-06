@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
-const dev = "production" === "development";
+const dev = "production" != "development";
 const config = {
 	preprocess: preprocess(),
 
