@@ -18,6 +18,7 @@ const config = {
 			lib: 'src/lib',
 			routes: 'src/routes'
 		},
+		appDir: 'internal',
 		// Override http methods in the Todo forms
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
