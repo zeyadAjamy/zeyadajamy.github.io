@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
-const dev = process.env.NODE_ENV === "development";
+const dev = process.env.NODE_ENV !== "development";
 const config = {
 	preprocess: preprocess(),
 
@@ -12,7 +12,7 @@ const config = {
 		}),
         paths: {
             // change below to your repo name
-            base: dev ? '' : '/zeyadajamy.github.io',
+            base: dev ? '' : '',
         },
 		files: {
 			lib: 'src/lib',
