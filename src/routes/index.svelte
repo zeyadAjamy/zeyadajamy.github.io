@@ -46,9 +46,12 @@
     }
 
     typeWriter(txt);
+
+    import fav from '../favicon.png';
 </script>
 
 <svelte:head>
+    <link rel="icon" href={fav} />
 	<title> Zeyad Alagamy | Home Site </title>        
 </svelte:head>
 

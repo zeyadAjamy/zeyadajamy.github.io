@@ -12,6 +12,7 @@
 	// since there's no dynamic data here, we can prerender
 	// it so that it gets served as a static asset in prod
 	export const prerender = true;
+    
 </script>
 
 <script lang="ts">
@@ -20,13 +21,17 @@
     import instagram from '../lib/fontAwesome/instagram.svg';
     import twitter from '../lib/fontAwesome/twitter.svg';
     import linkedin from '../lib/fontAwesome/linkedin.svg';
-    import download from '../lib/fontAwesome/download.svg';
     import envelope from '../lib/fontAwesome/envelope.svg';
     import phone from '../lib/fontAwesome/phone.svg';
     import share_nodes from '../lib/fontAwesome/share-nodes.svg';
+    import fav from '../favicon.png';
+    import About from './about.svelte';
+    let src = '../lib/lottie/contact-lottie.json';
+	import  LottiePlayer  from '@lottiefiles/svelte-lottie-player';
 </script>
 
 <svelte:head>
+    <link rel="icon" href={fav} />
 	<title>Contact</title>
 	<meta name="description" content="Contact me" />
 </svelte:head>
@@ -70,7 +75,7 @@
     </div>
     <div class="message">
         <div class="messageSvg">
-            <lottie-player src="src/lib/lottie/contact-lottie.json" speed="0.6"  loop autoplay></lottie-player>
+            <LottiePlayer {src} speed="0.6"  loop autoplay></LottiePlayer>
         </div>
         <form action="" class="message-card">
             <input type="text" name="name" placeholder="Name">
@@ -80,70 +85,9 @@
         </form>
     </div>
 </section>
+
 <style lang="scss">
     @import "../../static/style_src/styleVars.scss";
-
-    
-    .hireMe{
-        width: 100vw;
-        height: 350px; 
-        margin: 0px;
-        padding: 50px 0px 50px 0px;
-        background: url("../imgs/bg_1.jpg") no-repeat center center;
-        background-size: cover;
-        text-align: center;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        &::after{
-            content: "";
-            display: block;
-            width: 100%;
-            height: 450px;
-            position: absolute;
-            background-color: black;
-            opacity: 0.5;
-        }
-        h1{
-            font-family: Tri;
-            font-size: clamp(2rem, 10vw ,4rem);
-            color: white;
-            z-index: 55;
-            display: block;
-            line-height: 4rem;
-            margin: 50px;
-            font-weight: bolder;
-            z-index: 2;
-        }
-        .hireMeBtn{
-            width: 150px;
-            height: 50px;
-            border-radius: 11px;
-            border: none;
-            background-color: $primary-color;
-            color: rgba(255, 255, 255, 0.664);
-            font-family: Questrial;
-            font-size: 16px;
-            font-weight: 100;
-            transition: background-color 0.3s ease-in-out;
-            cursor: pointer;
-            z-index: 2;
-            &:hover{
-                background-color: #c5a591;
-            }
-        }
-        #particles{
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-    }
 
     .contact{
         width: 100vw;

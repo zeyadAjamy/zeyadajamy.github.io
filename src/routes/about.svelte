@@ -51,9 +51,12 @@
             }
         }).catch( err => console.log("Error: " + err));
     });
+    import fav from '../favicon.png';
+
 </script>
 
 <svelte:head>
+    <link rel="icon" href={fav} />
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
@@ -84,7 +87,7 @@
             <a target="_blank" href="https://www.linkedin.com/"> <img src={linkedin} alt="linkedin Icon"> </a>
             <a target="_blank" href="https://twitter.com/"> <img src={twitter} alt="twitter Icon">  </a>
         </div>
-        <a class="cv" href="_"> CV <img class="fa-download" src={download} alt="download Icon"></a>
+        <a class="cv" href="#"> CV <img class="fa-download" src={download} alt="download Icon"></a>
     </div>
 </section>
 

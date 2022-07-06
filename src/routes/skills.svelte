@@ -14,12 +14,6 @@
 	export const prerender = true;
 </script>
 
-<svelte:head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Zeyad Alagamy | Home Site </title>        
-</svelte:head>
-
-
 <script lang="ts">
     import { onMount } from 'svelte';
     let progressBars = "" as unknown as HTMLDivElement;
@@ -91,7 +85,17 @@
 
     // import media 
     import info from '../lib/fontAwesome/info.svg';
+    import fav from '../favicon.png';
+
 </script>
+
+<svelte:head>
+    <link rel="icon" href={fav} />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Zeyad Alagamy | Home Site </title>        
+</svelte:head>
+
+
 
 <section class="skills">
     <h1> Skills </h1>
