@@ -1,6 +1,7 @@
 <script lang="ts">
     import { page } from '$app/stores';
     import menuIcon from './bars.svg';
+    import { base } from '$app/paths';
     let nav : HTMLElement;
     const navbar = () =>{
         let height = nav.style.height;
@@ -18,21 +19,21 @@
     <img src={logo} title="Zeyad Alagamy" alt="Zeyad Alagamy" class="logo">
     <ul class="nav">
         <li class:active={$page.url.pathname === '/'}>
-            <a sveltekit:prefetch href="./" content="Home"> Home </a>
+            <a sveltekit:prefetch href="{ base }/" content="Home"> Home </a>
         </li>
         <li class:active={$page.url.pathname === '/about'}>
-            <a sveltekit:prefetch href="./about" content="About Me"> About Me </a></li>
+            <a sveltekit:prefetch href="{ base }/about" content="About Me"> About Me </a></li>
         <li class:active={$page.url.pathname === '/skills'}>
-            <a sveltekit:prefetch href="./skills" content="Skills"> Skills </a>
+            <a sveltekit:prefetch href="{ base }/skills" content="Skills"> Skills </a>
         </li>
         <li class:active={$page.url.pathname === '/projects'}>
-            <a sveltekit:prefetch href="./" content="Projects"> Projects </a>
+            <a sveltekit:prefetch href="{ base }/" content="Projects"> Projects </a>
         </li>
         <li class:active={$page.url.pathname === '/testmonials'}>
-            <a sveltekit:prefetch href="./" content="Testmonials"> Testmonials </a>
+            <a sveltekit:prefetch href="{ base }/" content="Testmonials"> Testmonials </a>
         </li>
         <li class:active={$page.url.pathname === '/contact'}>
-            <a sveltekit:prefetch href="./contact" content="Contact"> Contact </a>
+            <a sveltekit:prefetch href="{ base }/contact" content="Contact"> Contact </a>
         </li>
     </ul>
     <div class="menuIcon" on:click={navbar}>
@@ -40,21 +41,21 @@
     </div>
     <ul class="mobile-nav">
         <li class:active={$page.url.pathname === '/'}>
-            <a sveltekit:prefetch href='./' content="Home"> Home </a>
+            <a sveltekit:prefetch href='{ base }/' content="Home"> Home </a>
         </li>
         <li class:active={$page.url.pathname === '/about'}>
-            <a sveltekit:prefetch href="./about" content="About Me"> About Me </a></li>
+            <a sveltekit:prefetch href="{ base }/about" content="About Me"> About Me </a></li>
         <li class:active={$page.url.pathname === '/skills'}>
-            <a sveltekit:prefetch href="./skills" content="Skills"> Skills </a>
+            <a sveltekit:prefetch href="{ base }/skills" content="Skills"> Skills </a>
         </li>
         <li class:active={$page.url.pathname === '/projects'}>
-            <a sveltekit:prefetch href="./" content="Projects"> Projects </a>
+            <a sveltekit:prefetch href="{ base }/" content="Projects"> Projects </a>
         </li>
         <li class:active={$page.url.pathname === '/testmonials'}>
-            <a sveltekit:prefetch href="./" content="Testmonials"> Testmonials </a>
+            <a sveltekit:prefetch href="{ base }/" content="Testmonials"> Testmonials </a>
         </li>
         <li class:active={$page.url.pathname === '/contact'}>
-            <a sveltekit:prefetch href="./contact" content="Contact"> Contact </a>
+            <a sveltekit:prefetch href="{ base }/contact" content="Contact"> Contact </a>
         </li>
     </ul>
     

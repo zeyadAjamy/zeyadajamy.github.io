@@ -53,6 +53,7 @@
     });
     import fav from '../favicon.png';
     import imgSrc from '$lib/assets/imgs/zeyad_alagamy.png'
+    import {base} from '$app/paths';
 </script>
 
 <svelte:head>
@@ -87,7 +88,7 @@
             <a target="_blank" href="https://www.linkedin.com/"> <img src={linkedin} alt="linkedin Icon"> </a>
             <a target="_blank" href="https://twitter.com/"> <img src={twitter} alt="twitter Icon">  </a>
         </div>
-        <a class="cv" href="/"> CV <img class="fa-download" src={download} alt="download Icon"></a>
+        <a class="cv" href="{base}/"> CV <img class="fa-download" src={download} alt="download Icon"></a>
     </div>
 </section>
 

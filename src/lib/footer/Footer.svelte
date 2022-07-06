@@ -10,6 +10,8 @@
     import phone from '$lib/assets/fontAwesome/phone.svg';
     // API fetching    
     import { onMount } from 'svelte';
+    import {base} from '$app/paths';
+
     onMount(() => {
         async function extractJSON<T>(url: string) : Promise<T> { // Fetch data from JSON file
         return fetch(url)
@@ -61,26 +63,26 @@
             <ul> 
                 <li class:active={$page.url.pathname === '/'}>
                     <img src = {right_arrow} class ="fa-right-arrow">
-                    <a sveltekit:prefetch href="./" content="Home"> Home </a>
+                    <a sveltekit:prefetch href="{base}/" content="Home"> Home </a>
                 </li>
                 <li class:active={$page.url.pathname === '/about'}>
                     <img src = {right_arrow} class ="fa-right-arrow">
-                    <a sveltekit:prefetch href="./about" content="About Me"> About Me </a></li>
+                    <a sveltekit:prefetch href="{base}/about" content="About Me"> About Me </a></li>
                 <li class:active={$page.url.pathname === '/skills'}>
                     <img src = {right_arrow} class ="fa-right-arrow">
-                    <a sveltekit:prefetch href="./skills" content="Skills"> Skills </a>
+                    <a sveltekit:prefetch href="{base}/skills" content="Skills"> Skills </a>
                 </li>
                 <li class:active={$page.url.pathname === '/projects'}>
                     <img src = {right_arrow} class ="fa-right-arrow">
-                    <a sveltekit:prefetch href="./" content="Projects"> Projects </a>
+                    <a sveltekit:prefetch href="{base}/" content="Projects"> Projects </a>
                 </li>
                 <li class:active={$page.url.pathname === '/testmonials'}>
                     <img src = {right_arrow} class ="fa-right-arrow">
-                    <a sveltekit:prefetch href="./" content="Testmonials"> Testmonials </a>
+                    <a sveltekit:prefetch href="{base}/" content="Testmonials"> Testmonials </a>
                 </li>
                 <li class:active={$page.url.pathname === '/contact'}>
                     <img src = {right_arrow} class ="fa-right-arrow">
-                    <a sveltekit:prefetch href="./contact" content="Contact"> Contact </a>
+                    <a sveltekit:prefetch href="{base}/contact" content="Contact"> Contact </a>
                 </li>
             </ul>
         </div>

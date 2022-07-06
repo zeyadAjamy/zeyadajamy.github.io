@@ -26,7 +26,6 @@
     import share_nodes from '$lib/assets/fontAwesome/share-nodes.svg';
     import fav from '../favicon.png';
     import src from '$lib/assets/lottie/contact-lottie.json?url';
-
 </script>
 
 <svelte:head>
