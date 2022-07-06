@@ -27,7 +27,7 @@
     import fav from '../favicon.png';
     import About from './about.svelte';
     let src = '../lib/lottie/contact-lottie.json';
-	import  LottiePlayer  from '@lottiefiles/svelte-lottie-player';
+
 </script>
 
 <svelte:head>
@@ -75,7 +75,7 @@
     </div>
     <div class="message">
         <div class="messageSvg">
-            <LottiePlayer {src} speed="0.6"  loop autoplay></LottiePlayer>
+            <!--<LottiePlayer {src} speed="0.6"  loop autoplay></LottiePlayer>-->
         </div>
         <form action="" class="message-card">
             <input type="text" name="name" placeholder="Name">
