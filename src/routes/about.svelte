@@ -17,11 +17,11 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     // imgs
-    import facebook from '../lib/fontAwesome/facebook.svg';
-    import instagram from '../lib/fontAwesome/instagram.svg';
-    import twitter from '../lib/fontAwesome/twitter.svg';
-    import linkedin from '../lib/fontAwesome/linkedin.svg';
-    import download from '../lib/fontAwesome/download.svg';
+    import facebook from '$lib/assets/fontAwesome/facebook.svg';
+    import instagram from '$lib/assets/fontAwesome/instagram.svg';
+    import twitter from '$lib/assets/fontAwesome/twitter.svg';
+    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
+    import download from '$lib/assets/fontAwesome/download.svg';
     onMount(() => {
         async function extractJSON<T>(url: string) : Promise<T> { // Fetch data from JSON file
         return fetch(url)
@@ -52,7 +52,7 @@
         }).catch( err => console.log("Error: " + err));
     });
     import fav from '../favicon.png';
-
+    import imgSrc from '$lib/assets/imgs/zeyad_alagamy.png'
 </script>
 
 <svelte:head>
@@ -64,7 +64,7 @@
 <section class="about" id="about">
     <div class="my-img">
         <span class="corner"></span>
-        <input type="image" src='./imgs/zeyad_alagamy.png' alt="Zeyad's Personal Photo" title="Zeyad Alagamy" class="personalImg"/>
+        <input type="image" src={imgSrc} alt="Zeyad's Personal Photo" title="Zeyad Alagamy" class="personalImg"/>
         <span class="corner2"></span>
     </div>
     <div class="about-content">
@@ -87,12 +87,12 @@
             <a target="_blank" href="https://www.linkedin.com/"> <img src={linkedin} alt="linkedin Icon"> </a>
             <a target="_blank" href="https://twitter.com/"> <img src={twitter} alt="twitter Icon">  </a>
         </div>
-        <a class="cv" href="#"> CV <img class="fa-download" src={download} alt="download Icon"></a>
+        <a class="cv" href="/"> CV <img class="fa-download" src={download} alt="download Icon"></a>
     </div>
 </section>
 
 <style lang="scss">
-    @import "../../static/style_src/styleVars.scss";
+    @import  '../lib/assets/style_src/styleVars.scss';
 
     .about{
         display: flex;

@@ -10,11 +10,12 @@
         }
         nav.style.height = '95px';
     }
-    
+    import logo from './logo.png';
+    let toRoutes: string =  '../../routes/';
 </script>
 
 <header bind:this={nav}>
-    <img src="./imgs/logo.png" title="Zeyad Alagamy" alt="Zeyad Alagamy" class="logo">
+    <img src={logo} title="Zeyad Alagamy" alt="Zeyad Alagamy" class="logo">
     <ul class="nav">
         <li class:active={$page.url.pathname === '/'}>
             <a sveltekit:prefetch href="./" content="Home"> Home </a>
@@ -39,7 +40,7 @@
     </div>
     <ul class="mobile-nav">
         <li class:active={$page.url.pathname === '/'}>
-            <a sveltekit:prefetch href="./" content="Home"> Home </a>
+            <a sveltekit:prefetch href='./' content="Home"> Home </a>
         </li>
         <li class:active={$page.url.pathname === '/about'}>
             <a sveltekit:prefetch href="./about" content="About Me"> About Me </a></li>
@@ -60,7 +61,7 @@
 </header>
 
 <style type="text/scss">
-    @import "../../../static/style_src/styleVars.scss";
+    @import "../assets/style_src/styleVars.scss";
 
     header {
         position: sticky;

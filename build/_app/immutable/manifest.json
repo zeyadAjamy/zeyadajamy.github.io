@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-27c6a1f7.js",
+    "file": "start-d5c5f5d1.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-907722b2.js"
+      "_index-9f549b6b.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -16,21 +16,26 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-f10a942e.js",
+    "file": "pages/__layout.svelte-4a484b00.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-907722b2.js",
-      "_linkedin-b93669e8.js",
-      "_phone-fd36bba5.js"
+      "_index-9f549b6b.js",
+      "_linkedin-bc0dcdb2.js",
+      "_phone-e7c4ad64.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-b170886b.css"
+      "assets/pages/__layout.svelte-d4f4393d.css"
     ],
     "assets": [
       "assets/bars-1642cc13.svg",
+      "assets/logo-1c6d0d26.png",
+      "assets/RozhaOne-Regular-6433597f.ttf",
+      "assets/Questrial-Regular-1bd0a353.ttf",
+      "assets/TiroDevanagariSanskrit-e5417c17.ttf",
       "assets/right-arrow-0c8adc75.svg",
+      "assets/quote-left-8721552e.svg",
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
       "assets/fira-mono-all-400-normal-1e3b098c.woff",
       "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
@@ -41,87 +46,88 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-e61f9dac.js",
+    "file": "error.svelte-0337c44a.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-907722b2.js"
+      "_index-9f549b6b.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-ac18f934.js",
+    "file": "pages/about.svelte-eee16304.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-907722b2.js",
+      "_index-9f549b6b.js",
       "_env-5493c761.js",
-      "_linkedin-b93669e8.js",
+      "_linkedin-bc0dcdb2.js",
       "_favicon-83129df1.js"
     ],
     "css": [
-      "assets/about.svelte_svelte_type_style_lang-1f7ae69a.css"
+      "assets/pages/about.svelte-483cf7da.css"
     ],
     "assets": [
-      "assets/download-fc5e3527.svg"
+      "assets/download-fc5e3527.svg",
+      "assets/zeyad_alagamy-152c1f8b.png"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "pages/contact.svelte-6862f0c4.js",
+    "file": "pages/contact.svelte-34ad7232.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-907722b2.js",
+      "_index-9f549b6b.js",
       "_env-5493c761.js",
-      "_linkedin-b93669e8.js",
-      "_phone-fd36bba5.js",
+      "_linkedin-bc0dcdb2.js",
+      "_phone-e7c4ad64.js",
       "_favicon-83129df1.js"
     ],
     "css": [
-      "assets/pages/contact.svelte-731a6af4.css",
-      "assets/about.svelte_svelte_type_style_lang-1f7ae69a.css"
+      "assets/pages/contact.svelte-d70fc86f.css"
     ],
     "assets": [
-      "assets/share-nodes-b2c60774.svg"
+      "assets/share-nodes-b2c60774.svg",
+      "assets/contact-lottie-fa2ee7e6.json"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-096a962c.js",
+    "file": "pages/index.svelte-be84f184.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-907722b2.js",
+      "_index-9f549b6b.js",
       "_favicon-83129df1.js"
     ],
     "css": [
-      "assets/pages/index.svelte-d3aedc14.css"
+      "assets/pages/index.svelte-a356ac1d.css"
     ]
   },
   "src/routes/skills.svelte": {
-    "file": "pages/skills.svelte-5cdc8a26.js",
+    "file": "pages/skills.svelte-adf7afbd.js",
     "src": "src/routes/skills.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-907722b2.js",
+      "_index-9f549b6b.js",
       "_env-5493c761.js",
       "_favicon-83129df1.js"
     ],
     "css": [
-      "assets/pages/skills.svelte-b5fd29b8.css"
+      "assets/pages/skills.svelte-623e784b.css"
     ],
     "assets": [
       "assets/info-89b505ff.svg"
     ]
   },
-  "_index-907722b2.js": {
-    "file": "chunks/index-907722b2.js"
+  "_index-9f549b6b.js": {
+    "file": "chunks/index-9f549b6b.js"
   },
-  "_linkedin-b93669e8.js": {
-    "file": "chunks/linkedin-b93669e8.js",
+  "_linkedin-bc0dcdb2.js": {
+    "file": "chunks/linkedin-bc0dcdb2.js",
     "assets": [
       "assets/facebook-ca6c0266.svg",
       "assets/instagram-b9a37812.svg",
@@ -129,8 +135,8 @@
       "assets/linkedin-526ea545.svg"
     ]
   },
-  "_phone-fd36bba5.js": {
-    "file": "chunks/phone-fd36bba5.js",
+  "_phone-e7c4ad64.js": {
+    "file": "chunks/phone-e7c4ad64.js",
     "assets": [
       "assets/envelope-7a1c2fe9.svg",
       "assets/phone-1ea67435.svg"

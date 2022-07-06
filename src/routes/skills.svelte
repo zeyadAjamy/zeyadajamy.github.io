@@ -84,7 +84,7 @@
     });
 
     // import media 
-    import info from '../lib/fontAwesome/info.svg';
+    import info from '$lib/assets/fontAwesome/info.svg';
     import fav from '../favicon.png';
 
 </script>
@@ -155,7 +155,7 @@
 </section>
 
 <style lang="scss">
-    @import "../../static/style_src/styleVars.scss";
+    @import  '../lib/assets/style_src/styleVars.scss';
 
     .tooltip {
         display: flex;

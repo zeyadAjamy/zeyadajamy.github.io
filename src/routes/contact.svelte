@@ -17,16 +17,15 @@
 
 <script lang="ts">
     // media import
-    import facebook from '../lib/fontAwesome/facebook.svg';
-    import instagram from '../lib/fontAwesome/instagram.svg';
-    import twitter from '../lib/fontAwesome/twitter.svg';
-    import linkedin from '../lib/fontAwesome/linkedin.svg';
-    import envelope from '../lib/fontAwesome/envelope.svg';
-    import phone from '../lib/fontAwesome/phone.svg';
-    import share_nodes from '../lib/fontAwesome/share-nodes.svg';
+    import facebook from '$lib/assets/fontAwesome/facebook.svg';
+    import instagram from '$lib/assets/fontAwesome/instagram.svg';
+    import twitter from '$lib/assets/fontAwesome/twitter.svg';
+    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
+    import envelope from '$lib/assets/fontAwesome/envelope.svg';
+    import phone from '$lib/assets/fontAwesome/phone.svg';
+    import share_nodes from '$lib/assets/fontAwesome/share-nodes.svg';
     import fav from '../favicon.png';
-    import About from './about.svelte';
-    let src = '../lib/lottie/contact-lottie.json';
+    import src from '$lib/assets/lottie/contact-lottie.json?url';
 
 </script>
 
@@ -75,7 +74,7 @@
     </div>
     <div class="message">
         <div class="messageSvg">
-            <!--<LottiePlayer {src} speed="0.6"  loop autoplay></LottiePlayer>-->
+            <lottie-player src= {src} speed="0.6"  loop autoplay></lottie-player>
         </div>
         <form action="" class="message-card">
             <input type="text" name="name" placeholder="Name">
@@ -87,7 +86,7 @@
 </section>
 
 <style lang="scss">
-    @import "../../static/style_src/styleVars.scss";
+    @import  '../lib/assets/style_src/styleVars.scss';
 
     .contact{
         width: 100vw;

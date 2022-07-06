@@ -1,16 +1,15 @@
 <script lang="ts">
     import { page } from '$app/stores';
     // imgs
-    import right_arrow from '../fontAwesome/right-arrow.svg';
-    import facebook from '../fontAwesome/facebook.svg';
-    import instagram from '../fontAwesome/instagram.svg';
-    import twitter from '../fontAwesome/twitter.svg';
-    import linkedin from '../fontAwesome/linkedin.svg';
-    import envelope from '../fontAwesome/envelope.svg';
-    import phone from '../fontAwesome/phone.svg';
+    import right_arrow from '$lib/assets/fontAwesome/right-arrow.svg';
+    import facebook from '$lib/assets/fontAwesome/facebook.svg';
+    import instagram from '$lib/assets/fontAwesome/instagram.svg';
+    import twitter from '$lib/assets/fontAwesome/twitter.svg';
+    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
+    import envelope from '$lib/assets/fontAwesome/envelope.svg';
+    import phone from '$lib/assets/fontAwesome/phone.svg';
     // API fetching    
     import { onMount } from 'svelte';
-
     onMount(() => {
         async function extractJSON<T>(url: string) : Promise<T> { // Fetch data from JSON file
         return fetch(url)
@@ -105,7 +104,7 @@
 </footer>
 
 <style lang="scss">
-    @import "../../../static/style_src/styleVars.scss";
+    @import "../assets/style_src/styleVars.scss";
 
     footer{
         width: 100vw;
