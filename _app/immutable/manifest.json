@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-cd7eec79.js",
+    "file": "start-0b6ec6fb.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -17,7 +17,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-abba2816.js",
+    "file": "pages/__layout.svelte-da59fb35.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -28,7 +28,7 @@
       "_phone-e7c4ad64.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-e6c89798.css"
+      "assets/pages/__layout.svelte-ec58c2f6.css"
     ],
     "assets": [
       "assets/bars-1642cc13.svg",
@@ -54,7 +54,7 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-e67cb6d9.js",
+    "file": "pages/about.svelte-982dd190.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -66,7 +66,7 @@
       "_paths-396f020f.js"
     ],
     "css": [
-      "assets/pages/about.svelte-16398460.css"
+      "assets/pages/about.svelte-05f7b85d.css"
     ],
     "assets": [
       "assets/download-fc5e3527.svg",
@@ -78,7 +78,7 @@
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "pages/contact.svelte-cd5e3411.js",
+    "file": "pages/contact.svelte-55e20680.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -90,18 +90,18 @@
       "_favicon-8f30e5a7.js"
     ],
     "css": [
-      "assets/pages/contact.svelte-92bd5916.css"
+      "assets/pages/contact.svelte-2ef3dd23.css"
     ],
     "assets": [
       "assets/share-nodes-b2c60774.svg",
-      "assets/contact-lottie-fa2ee7e6.json",
+      "assets/contact-lottie-4880d5df.json",
       "assets/RozhaOne-Regular-6433597f.ttf",
       "assets/Questrial-Regular-1bd0a353.ttf",
       "assets/TiroDevanagariSanskrit-e5417c17.ttf"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-bf09c004.js",
+    "file": "pages/index.svelte-717471a0.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -119,7 +119,7 @@
     ]
   },
   "src/routes/skills.svelte": {
-    "file": "pages/skills.svelte-6c1d75c4.js",
+    "file": "pages/skills.svelte-c9646d3d.js",
     "src": "src/routes/skills.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
