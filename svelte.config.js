@@ -11,8 +11,7 @@ const config = {
             fallback: 'index.html'
 		}),
         paths: {
-            // change below to your repo name
-            base: dev ? '' : '',
+            base:'',
         },
 		files: {
 			lib: 'src/lib',

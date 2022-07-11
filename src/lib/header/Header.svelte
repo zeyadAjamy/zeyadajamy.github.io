@@ -60,8 +60,8 @@
     
 </header>
 
-<style type="text/scss">
-    @import "../../../static/style_src/styleVars.scss";
+<style lang="scss">
+    @import "../assets/style_src/styleVars.scss";
 
     header {
         position: sticky;

@@ -17,15 +17,15 @@
 
 <script lang="ts">
     // media import
-    import facebook from '../../static/fontAwesome/facebook.svg';
-    import instagram from '../../static/fontAwesome/instagram.svg';
-    import twitter from '../../static/fontAwesome/twitter.svg';
-    import linkedin from '../../static/fontAwesome/linkedin.svg';
-    import envelope from '../../static/fontAwesome/envelope.svg';
-    import phone from '../../static/fontAwesome/phone.svg';
-    import share_nodes from '../../static/fontAwesome/share-nodes.svg';
-    import fav from '../../static/favicon.png';
-    import src from '../../static/lottie/contact-lottie.json?url';
+    import facebook from '$lib/assets/fontAwesome/facebook.svg';
+    import instagram from '$lib/assets/fontAwesome/instagram.svg';
+    import twitter from '$lib/assets/fontAwesome/twitter.svg';
+    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
+    import envelope from '$lib/assets/fontAwesome/envelope.svg';
+    import phone from '$lib/assets/fontAwesome/phone.svg';
+    import share_nodes from '$lib/assets/fontAwesome/share-nodes.svg';
+    import fav from '$lib/assets/favicon.png';
+    import src from '$lib/assets/lottie/contact-lottie.json?url';
 </script>
 
 <svelte:head>
@@ -85,7 +85,7 @@
 </section>
 
 <style lang="scss">
-    @import  '../../static/style_src/styleVars.scss';
+    @import  '../lib/assets/style_src/styleVars.scss';
 
     .contact{
         width: 100vw;

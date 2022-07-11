@@ -1,17 +1,16 @@
 <script lang="ts">
     import { page } from '$app/stores';
     // imgs
-    import right_arrow from '../../../static/fontAwesome/right-arrow.svg';
-    import facebook from '../../../static/fontAwesome/facebook.svg';
-    import instagram from '../../../static/fontAwesome/instagram.svg';
-    import twitter from '../../../static/fontAwesome/twitter.svg';
-    import linkedin from '../../../static/fontAwesome/linkedin.svg';
-    import envelope from '../../../static/fontAwesome/envelope.svg';
-    import phone from '../../../static/fontAwesome/phone.svg';
+    import right_arrow from '$lib/assets/fontAwesome/right-arrow.svg';
+    import facebook from '$lib/assets/fontAwesome/facebook.svg';
+    import instagram from '$lib/assets/fontAwesome/instagram.svg';
+    import twitter from '$lib/assets/fontAwesome/twitter.svg';
+    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
+    import envelope from '$lib/assets/fontAwesome/envelope.svg';
+    import phone from '$lib/assets/fontAwesome/phone.svg';
     // API fetching    
     import { onMount } from 'svelte';
     import {base} from '$app/paths';
-
     onMount(() => {
         async function extractJSON<T>(url: string) : Promise<T> { // Fetch data from JSON file
         return fetch(url)
@@ -52,36 +51,36 @@
                 <span class="author"></span>
             </div>
             <div class="about-social-icons">
-                <a target="_blank" href="https://www.facebook.com/"> <img src={facebook} class="footSocial"> </a>
-                <a target="_blank" href="https://www.instagram.com/"> <img src={instagram} class="footSocial"></a>
-                <a target="_blank" href="https://www.linkedin.com/"> <img src={linkedin} class="footSocial"> </a>
-                <a target="_blank" href="https://twitter.com/"> <img src={twitter} class="footSocial">  </a>
+                <a target="_blank" href="https://www.facebook.com/"> <img src={facebook} class="footSocial" alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"> <img src={instagram} class="footSocial" alt="instagram"></a>
+                <a target="_blank" href="https://www.linkedin.com/"> <img src={linkedin} class="footSocial" alt="linkedin"></a>
+                <a target="_blank" href="https://twitter.com/"> <img src={twitter} class="footSocial" alt="twitter"></a>
             </div>
         </div>
         <div class="footer-menu">
             <h2> Links </h2>
             <ul> 
                 <li class:active={$page.url.pathname === '/'}>
-                    <img src = {right_arrow} class ="fa-right-arrow">
+                    <img src = {right_arrow} class ="fa-right-arrow" alt="Home page">
                     <a sveltekit:prefetch href="{base}/" content="Home"> Home </a>
                 </li>
                 <li class:active={$page.url.pathname === '/about'}>
-                    <img src = {right_arrow} class ="fa-right-arrow">
+                    <img src = {right_arrow} class ="fa-right-arrow" alt="About me page">
                     <a sveltekit:prefetch href="{base}/about" content="About Me"> About Me </a></li>
                 <li class:active={$page.url.pathname === '/skills'}>
-                    <img src = {right_arrow} class ="fa-right-arrow">
+                    <img src = {right_arrow} class ="fa-right-arrow" alt="skills page">
                     <a sveltekit:prefetch href="{base}/skills" content="Skills"> Skills </a>
                 </li>
                 <li class:active={$page.url.pathname === '/projects'}>
-                    <img src = {right_arrow} class ="fa-right-arrow">
+                    <img src = {right_arrow} class ="fa-right-arrow" alt="projects page">
                     <a sveltekit:prefetch href="{base}/" content="Projects"> Projects </a>
                 </li>
                 <li class:active={$page.url.pathname === '/testmonials'}>
-                    <img src = {right_arrow} class ="fa-right-arrow">
+                    <img src = {right_arrow} class ="fa-right-arrow" alt="Testmonials page">
                     <a sveltekit:prefetch href="{base}/" content="Testmonials"> Testmonials </a>
                 </li>
                 <li class:active={$page.url.pathname === '/contact'}>
-                    <img src = {right_arrow} class ="fa-right-arrow">
+                    <img src = {right_arrow} class ="fa-right-arrow" alt="Contact me page">
                     <a sveltekit:prefetch href="{base}/contact" content="Contact"> Contact </a>
                 </li>
             </ul>
@@ -89,16 +88,16 @@
         <div class="footer-service">
             <h2> Services </h2>
             <ul>
-                <li> <img src = {right_arrow} class ="fa-right-arrow"> <a href="#"> Web Design </a> </li>
-                <li> <img src = {right_arrow} class ="fa-right-arrow"> <a href="#"> Web Development </a> </li>
-                <li> <img src = {right_arrow} class ="fa-right-arrow"> <a href="#"> Cross platform App </a> </li>
+                <li> <img src = {right_arrow} class ="fa-right-arrow" alt=""> <a href="{base}"> Web Design </a> </li>
+                <li> <img src = {right_arrow} class ="fa-right-arrow" alt=""> <a href="{base}"> Web Development </a> </li>
+                <li> <img src = {right_arrow} class ="fa-right-arrow" alt=""> <a href="{base}"> Cross platform App </a> </li>
             </ul>
         </div>
         <div class="footer-contact">
             <h2> Have a Question? </h2>
             <ul>
-                <li> <img src = {envelope} class ="fa-email"> <span> wezza2003@gmail.com </span></li>
-                <li> <img src = {phone} class ="fa-phone"> <span> +20 (11) 192 365 35 <br> +7 (987) 729 336 61 </span></li>
+                <li> <img src = {envelope} class ="fa-email" alt="Envelope Icon"> <span> wezza2003@gmail.com </span></li>
+                <li> <img src = {phone} class ="fa-phone" alt="Phone Icon"> <span> +20 (11) 192 365 35 <br> +7 (987) 729 336 61 </span></li>
             </ul>
         </div>
     </div>
@@ -106,7 +105,7 @@
 </footer>
 
 <style lang="scss">
-    @import "../../../static/style_src/styleVars.scss";
+    @import "../assets/style_src/styleVars.scss";
 
     footer{
         width: 100vw;
@@ -278,6 +277,12 @@
                 color: red;
                 display: inline-block;
                 font-size: 18px;
+            }
+        }
+
+        .quote{
+            &::before{
+                background: url("../assets/fontAwesome/quote-left.svg") no-repeat !important;
             }
         }
     }

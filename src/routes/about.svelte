@@ -1,27 +1,18 @@
 <script context="module">
 	import { browser, dev } from '$app/env';
-
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
 	export const hydrate = dev;
-
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
 	export const router = browser;
-
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
 	export const prerender = true;
 </script>
 
 <script lang="ts">
     import { onMount } from 'svelte';
     // imgs
-    import facebook from '../../static/fontAwesome/facebook.svg';
-    import instagram from '../../static/fontAwesome/instagram.svg';
-    import twitter from '../../static/fontAwesome/twitter.svg';
-    import linkedin from '../../static/fontAwesome/linkedin.svg';
-    import download from '../../static/fontAwesome/download.svg';
+    import facebook from '$lib/assets/fontAwesome/facebook.svg';
+    import instagram from '$lib/assets/fontAwesome/instagram.svg';
+    import twitter from '$lib/assets/fontAwesome/twitter.svg';
+    import linkedin from '$lib/assets/fontAwesome/linkedin.svg';
+    import download from '$lib/assets/fontAwesome/download.svg';
     onMount(() => {
         async function extractJSON<T>(url: string) : Promise<T> { // Fetch data from JSON file
         return fetch(url)
@@ -51,8 +42,8 @@
             }
         }).catch( err => console.log("Error: " + err));
     });
-    import fav from '../favicon.png';
-    import imgSrc from '../../static/imgs/zeyad_alagamy.png'
+    import fav from '$lib/assets/favicon.png';
+    import imgSrc from '$lib/assets/imgs/zeyad_alagamy.png'
     import {base} from '$app/paths';
 </script>
 
@@ -93,7 +84,7 @@
 </section>
 
 <style lang="scss">
-    @import  '../../static/style_src/styleVars.scss';
+    @import  '../lib/assets/style_src/styleVars.scss';
 
     .about{
         display: flex;
