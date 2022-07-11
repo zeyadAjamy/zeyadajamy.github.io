@@ -47,10 +47,9 @@
 		"svelte-preprocess": "^4.10.7"
 	},
 	"lint-staged": {
-		"*.{svelte,ts, tsx, jsx, js}": [
+		"**/*.{svelte,ts, tsx, jsx, js}": [
 			"prettier --write",
-			"eslint --fix",
-			"git add"
+			"eslint --cache --fix"
 		]
 	}
 }
