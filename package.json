@@ -6,7 +6,7 @@
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync",
+		"prepare": "svelte-kit sync && husky install",
 		"test": "playwright test",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -22,6 +22,8 @@
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
 		"node-sass": "^7.0.1",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
@@ -43,5 +45,12 @@
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-import-resolver-typescript": "^3.2.5",
 		"svelte-preprocess": "^4.10.7"
+	},
+	"lint-staged": {
+		"*.{svelte,ts, tsx, jsx, js}": [
+			"prettier --write",
+			"eslint --fix",
+			"git add"
+		]
 	}
 }
