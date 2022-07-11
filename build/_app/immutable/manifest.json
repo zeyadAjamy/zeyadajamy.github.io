@@ -1,0 +1,172 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-65a08432.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-9f549b6b.js",
+      "_paths-396f020f.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/about.svelte",
+      "src/routes/contact.svelte",
+      "src/routes/index.svelte",
+      "src/routes/skills.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-f51ea8a2.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-9f549b6b.js",
+      "_paths-396f020f.js",
+      "_linkedin-bc0dcdb2.js",
+      "_phone-e7c4ad64.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-e6c89798.css"
+    ],
+    "assets": [
+      "assets/bars-1642cc13.svg",
+      "assets/logo-1c6d0d26.png",
+      "assets/right-arrow-0c8adc75.svg",
+      "assets/quote-left-8721552e.svg",
+      "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+      "assets/fira-mono-all-400-normal-1e3b098c.woff",
+      "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+      "assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+      "assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+      "assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+      "assets/fira-mono-latin-400-normal-e43b3538.woff2"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-0337c44a.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-9f549b6b.js"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "pages/about.svelte-9e637cb2.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-9f549b6b.js",
+      "_env-5493c761.js",
+      "_linkedin-bc0dcdb2.js",
+      "_favicon-8f30e5a7.js",
+      "_paths-396f020f.js"
+    ],
+    "css": [
+      "assets/pages/about.svelte-16398460.css"
+    ],
+    "assets": [
+      "assets/download-fc5e3527.svg",
+      "assets/zeyad_alagamy-152c1f8b.png",
+      "assets/RozhaOne-Regular-6433597f.ttf",
+      "assets/Questrial-Regular-1bd0a353.ttf",
+      "assets/TiroDevanagariSanskrit-e5417c17.ttf",
+      "assets/quote-left-8721552e.svg"
+    ]
+  },
+  "src/routes/contact.svelte": {
+    "file": "pages/contact.svelte-d2f37ade.js",
+    "src": "src/routes/contact.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-9f549b6b.js",
+      "_env-5493c761.js",
+      "_linkedin-bc0dcdb2.js",
+      "_phone-e7c4ad64.js",
+      "_favicon-8f30e5a7.js"
+    ],
+    "css": [
+      "assets/pages/contact.svelte-92bd5916.css"
+    ],
+    "assets": [
+      "assets/share-nodes-b2c60774.svg",
+      "assets/contact-lottie-fa2ee7e6.json",
+      "assets/RozhaOne-Regular-6433597f.ttf",
+      "assets/Questrial-Regular-1bd0a353.ttf",
+      "assets/TiroDevanagariSanskrit-e5417c17.ttf"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-59db1254.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-9f549b6b.js",
+      "_favicon-8f30e5a7.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-68105cfe.css"
+    ],
+    "assets": [
+      "assets/RozhaOne-Regular-6433597f.ttf",
+      "assets/Questrial-Regular-1bd0a353.ttf",
+      "assets/TiroDevanagariSanskrit-e5417c17.ttf"
+    ]
+  },
+  "src/routes/skills.svelte": {
+    "file": "pages/skills.svelte-6a728245.js",
+    "src": "src/routes/skills.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-9f549b6b.js",
+      "_env-5493c761.js",
+      "_favicon-8f30e5a7.js"
+    ],
+    "css": [
+      "assets/pages/skills.svelte-7382c149.css"
+    ],
+    "assets": [
+      "assets/info-89b505ff.svg",
+      "assets/RozhaOne-Regular-6433597f.ttf",
+      "assets/Questrial-Regular-1bd0a353.ttf",
+      "assets/TiroDevanagariSanskrit-e5417c17.ttf"
+    ]
+  },
+  "_index-9f549b6b.js": {
+    "file": "chunks/index-9f549b6b.js"
+  },
+  "_paths-396f020f.js": {
+    "file": "chunks/paths-396f020f.js"
+  },
+  "_linkedin-bc0dcdb2.js": {
+    "file": "chunks/linkedin-bc0dcdb2.js",
+    "assets": [
+      "assets/facebook-ca6c0266.svg",
+      "assets/instagram-b9a37812.svg",
+      "assets/twitter-a43da74c.svg",
+      "assets/linkedin-526ea545.svg"
+    ]
+  },
+  "_phone-e7c4ad64.js": {
+    "file": "chunks/phone-e7c4ad64.js",
+    "assets": [
+      "assets/envelope-7a1c2fe9.svg",
+      "assets/phone-1ea67435.svg"
+    ]
+  },
+  "_env-5493c761.js": {
+    "file": "chunks/env-5493c761.js"
+  },
+  "_favicon-8f30e5a7.js": {
+    "file": "chunks/favicon-8f30e5a7.js",
+    "assets": [
+      "assets/favicon-87bb2155.png"
+    ]
+  }
+}
